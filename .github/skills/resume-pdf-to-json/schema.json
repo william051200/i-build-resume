@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Resume Builder import",
+  "description": "Schema for the resume.json file imported by the Resume Builder app.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "fullName",
+    "title",
+    "email",
+    "phone",
+    "location",
+    "linkedin",
+    "website",
+    "summary",
+    "skills",
+    "experience",
+    "education",
+    "projects",
+    "certifications"
+  ],
+  "properties": {
+    "fullName": { "type": "string" },
+    "title": { "type": "string" },
+    "email": { "type": "string" },
+    "phone": { "type": "string" },
+    "location": { "type": "string" },
+    "linkedin": { "type": "string" },
+    "website": { "type": "string" },
+    "summary": { "type": "string" },
+    "skills": {
+      "type": "string",
+      "description": "Single comma-separated string of skills, not an array."
+    },
+    "experience": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "company", "location", "start", "end", "bullets"],
+        "properties": {
+          "title": { "type": "string" },
+          "company": { "type": "string" },
+          "location": { "type": "string" },
+          "start": { "type": "string" },
+          "end": { "type": "string" },
+          "bullets": {
+            "type": "string",
+            "description": "One achievement per line, separated by \\n."
+          }
+        }
+      }
+    },
+    "education": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["degree", "school", "location", "start", "end", "notes"],
+        "properties": {
+          "degree": { "type": "string" },
+          "school": { "type": "string" },
+          "location": { "type": "string" },
+          "start": { "type": "string" },
+          "end": { "type": "string" },
+          "notes": {
+            "type": "string",
+            "description": "One note per line, separated by \\n."
+          }
+        }
+      }
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "link", "description"],
+        "properties": {
+          "name": { "type": "string" },
+          "link": { "type": "string" },
+          "description": { "type": "string" }
+        }
+      }
+    },
+    "certifications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "issuer", "date"],
+        "properties": {
+          "name": { "type": "string" },
+          "issuer": { "type": "string" },
+          "date": { "type": "string" }
+        }
+      }
+    }
+  }
+}
