@@ -5,6 +5,8 @@ export type SimpleFieldKey =
   | "phone"
   | "location"
   | "linkedin"
+  | "linkedinLabel"
   | "website"
+  | "websiteLabel"
   | "summary"
   | "skills";

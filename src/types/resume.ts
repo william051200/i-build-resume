@@ -10,7 +10,9 @@ export interface Resume {
   phone: string;
   location: string;
   linkedin: string;
+  linkedinLabel: string;
   website: string;
+  websiteLabel: string;
   summary: string;
   skills: string;
   experience: ExperienceEntry[];

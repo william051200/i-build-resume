@@ -19,8 +19,8 @@ const contactParts = computed(() => {
   if (s.email) parts.push({ text: s.email, href: "mailto:" + s.email });
   if (s.phone) parts.push({ text: s.phone });
   if (s.location) parts.push({ text: s.location });
-  if (s.linkedin) parts.push({ text: s.linkedin, href: linkHref(s.linkedin) });
-  if (s.website) parts.push({ text: s.website, href: linkHref(s.website) });
+  if (s.linkedin) parts.push({ text: s.linkedinLabel.trim() || s.linkedin, href: linkHref(s.linkedin) });
+  if (s.website) parts.push({ text: s.websiteLabel.trim() || s.website, href: linkHref(s.website) });
   return parts;
 });
 

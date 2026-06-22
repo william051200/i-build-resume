@@ -9,7 +9,9 @@ export function sampleResume(): Resume {
     phone: "+1 555 123 4567",
     location: "Seattle, WA",
     linkedin: "linkedin.com/in/janedoe",
+    linkedinLabel: "LinkedIn",
     website: "janedoe.dev",
+    websiteLabel: "Portfolio",
     summary:
       "Senior software engineer with 8+ years building scalable cloud services. Proven track record leading teams and shipping reliable, high-impact products.",
     skills:

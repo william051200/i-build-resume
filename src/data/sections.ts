@@ -42,7 +42,9 @@ export const DETAIL_FIELDS: SimpleFieldDef[] = [
   { key: "phone", label: "Phone", placeholder: "+1 555 123 4567" },
   { key: "location", label: "Location", placeholder: "City, Country" },
   { key: "linkedin", label: "LinkedIn", placeholder: "linkedin.com/in/janedoe" },
+  { key: "linkedinLabel", label: "LinkedIn label (optional)", placeholder: "LinkedIn" },
   { key: "website", label: "Website / Portfolio", placeholder: "janedoe.dev" },
+  { key: "websiteLabel", label: "Website label (optional)", placeholder: "Portfolio" },
 ];
 
 /** Definitions for each repeatable section + its per-entry fields. */
