@@ -3,10 +3,15 @@
 A simple, professional, browser-based resume builder built with **Vue 3 + Vite +
 TypeScript**. Fill in a form, see a live preview, and export to PDF.
 
+**▶ [Live demo](https://william051200.github.io/i-build-resume/)** — try it now, no install required.
+
 Your data is automatically saved in your browser so you can come back later and
 **update** your resume anytime.
 
 ## Getting started
+
+You can use the **[hosted version](https://william051200.github.io/i-build-resume/)**
+directly in your browser. To run it locally for development:
 
 Requires **Node.js 18+** and npm.
 
